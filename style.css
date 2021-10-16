@@ -1,0 +1,135 @@
+@keyframes shakeDiv{
+    0% {margin: 0px 0rem 0px 0rem;}
+    10% {margin: 0px 0rem 0px 10rem;}
+    20% {margin: 0px 0rem 0px 0rem;}
+    30% {margin: 0px 10rem 0px 0rem;}
+    40% {margin: 0px 0rem 0px 10rem;}
+    50% {margin: 0px 0rem 0px 0rem;}
+    60% {margin: 0px 10rem 0px 0rem;}
+    70% {margin: 0px 0rem 0px 10rem;}
+    80% {margin: 0px 0rem 0px 0rem;}
+    90% {margin: 0px 10rem 0px 0rem;}
+    100% {margin: 0px 0rem 0px 0px;}
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    margin: 1rem;
+    
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    background: #eee;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border: 0.08rem solid white;
+}
+
+.shakeDiv{
+    animation: shakeDiv;
+    animation-duration: 1s;
+}
+
+.knob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+    border: 0.01rem solid lightgray;
+}
+
+.knob div{
+    background: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 4rem;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#container div{ 
+    outline: 1px solid rgba(0,0,0,0.05);
+}
+
+#container div:hover{
+    background: black;
+}
+
+.black{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.gold-font{
+    font-family: 'Ephesis', cursive;
+    color: gold;
+    font-size: 5rem;
+    margin-bottom:1rem;
+}
+
+.drop-shadow{
+    filter: drop-shadow(0 2mm 1mm black);
+}
+
+.inner-shadow{
+    box-shadow: 0 0 2rem black inset;
+}
+
+#controls{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#controls button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#controls p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#controls button:hover{
+    color: white;
+}
+
+#etch-a-sketch{
+    padding: 0.5rem;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #dc0f1b;
+    border: 0.2rem solid black;
+}
